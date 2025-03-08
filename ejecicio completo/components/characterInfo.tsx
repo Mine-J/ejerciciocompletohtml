@@ -19,7 +19,7 @@ export const CharacterInfo:FunctionalComponent<data> = (data)=> {
         <div>
             <div class= "cabecera">
                 <h1>{data.results.name}</h1>
-                <a href="/"><img src="image.png" alt="foto" /></a>
+                <a href="/"><img  class = "casa" src="/casa.png" alt="foto" /></a>
             </div>
             <table>
                 <tr>
