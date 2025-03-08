@@ -36,7 +36,7 @@ export const CharacterInfo:FunctionalComponent<data> = (data)=> {
             </table>
             <ul>
                 {data.results.episode.map((elem) => (
-                    <li><a href={elem}>{elem}</a></li>
+                    <li><a href={`/episodes/${elem.split('/').pop()}`}>Episodio: {elem.split('/').pop()}</a></li>
                 ))}
             </ul>
         </div>
