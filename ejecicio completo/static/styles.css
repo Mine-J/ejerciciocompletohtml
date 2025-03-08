@@ -27,11 +27,12 @@ table{
 tr{
   border-style: dashed;
   display: flex;
-  width: 1000px;
+  width: 200%;
   flex-direction: row;
   justify-content: space-around;
 }
 td{
+  border-style: dashed;
   align-content: center;
   text-align: center;
 }
