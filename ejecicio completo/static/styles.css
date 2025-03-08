@@ -6,77 +6,80 @@ html {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.contenedor{
-  
+.contenedor {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+   
 }
-.caja{
-  margin: auto;
-  text-align: center;
-  
-}
-table{
-  border-style: dashed;
-  display: flex;
 
-  width: auto;
-  
+.caja {
+  margin: 20px; /* Añadir margen para más espacio alrededor de cada caja */
+  text-align: center;
 }
-tr{
-  border-style: dashed;
+
+table {
+  display: flex;
+  width: auto;
+}
+
+tr {
   display: flex;
   width: 200%;
   flex-direction: row;
   justify-content: space-around;
 }
-td{
-  border-style: dashed;
+
+td {
   align-content: center;
   text-align: center;
+  padding: 10px; /* Añadir padding para mejorar el espaciado dentro de las celdas */
 }
-img{
+
+img {
   border-radius: 50%;
 }
-.cabecera{
-  
+
+.cabecera {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.pasarPagina{
+
+.pasarPagina {
   width: auto;
   margin: 5px;
   gap: 10px;
-
-  
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.pasoPagina{
+
+.pasoPagina {
   width: 20px;
-  
 }
-.casa{
+
+.casa {
   width: 40px;
 }
-a{
-  
+
+a {
   color: black;
   text-decoration: none;
 }
-ul{
+
+ul {
   column-gap: 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
 }
 
-li{
-  
-  margin: auto;
+li {
+  margin: 10px; /* Añadir margen para más espacio alrededor de cada elemento de lista */
 }
