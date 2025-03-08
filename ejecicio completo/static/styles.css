@@ -7,18 +7,21 @@ html {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.componente{
-  border-style: dashed;
-  width: 75%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+.contenedor{
   
-}
-
-body{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   
+  
+  
+  
+}
+.caja{
+  margin: auto;
+  text-align: center;
+  
+}
+image{
+  border-radius: 50%;
 }

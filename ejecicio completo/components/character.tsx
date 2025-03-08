@@ -9,8 +9,8 @@ type character = {
 export const Character: FunctionalComponent<character> = (character)=> {
 
     return (
-        <div>
-            <h1>{character.name}</h1>
+        <div class="caja">
+            <h2>{character.name}</h2>
             <img src={character.image} alt="foto" />
         </div>
     );
