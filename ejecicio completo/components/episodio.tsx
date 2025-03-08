@@ -12,7 +12,7 @@ export type data = {
 
 export const Episodio:FunctionalComponent<data> = (data) => {
     const datos:epidioDatos = data.data;
-    console.log(datos)
+    
     return (
         <div>
             <div class = "cabecera">
