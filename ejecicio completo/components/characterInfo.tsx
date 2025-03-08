@@ -17,7 +17,10 @@ export const CharacterInfo:FunctionalComponent<data> = (data)=> {
 
     return (
         <div>
-            <h1>{data.results.name}</h1>
+            <div class= "cabecera">
+                <h1>{data.results.name}</h1>
+                <a href="/"><img src="image.png" alt="foto" /></a>
+            </div>
             <table>
                 <tr>
                     <td>
@@ -32,8 +35,8 @@ export const CharacterInfo:FunctionalComponent<data> = (data)=> {
                 </tr>
             </table>
             <ul>
-                {data.results.episode.map((elem, index) => (
-                    <li key={index}>{elem}</li>
+                {data.results.episode.map((elem) => (
+                    <li><a href={elem}>{elem}</a></li>
                 ))}
             </ul>
         </div>
