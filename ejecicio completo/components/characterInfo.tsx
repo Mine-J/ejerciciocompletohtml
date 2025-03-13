@@ -6,9 +6,18 @@ type charac = {
     gender:string;
     status:string;
     species:string;
-    origin:{name:string};
-    episode:string[]
+    originName:string;
+    episode:episode[]
 }
+
+type episode = {
+    id:string;
+    name:string;
+    air_date:string;
+    episode:string
+    characters:charac[]
+}
+
 export type data = {
     results:charac
 }
@@ -28,7 +37,7 @@ export const CharacterInfo:FunctionalComponent<data> = (data)=> {
                     </td>
                     <td>
                         <p>Genero: {data.results.gender}</p>
-                        <p>Origen: {data.results.origin.name}</p>
+                        <p>Origen: {data.results.originName}</p>
                         <p>Especie: {data.results.species}</p>
                         <p>Estatus: {data.results.status}</p>
                     </td>
@@ -36,7 +45,7 @@ export const CharacterInfo:FunctionalComponent<data> = (data)=> {
             </table>
             <ul>
                 {data.results.episode.map((elem) => (
-                    <li><a href={`/episodes/${elem.split('/').pop()}`}>Episodio: {elem.split('/').pop()}</a></li>
+                    <li><a href={`/episodes/${elem.id}`}>Episodio {elem.id}: {elem.name}</a></li>
                 ))}
             </ul>
         </div>
