@@ -13,7 +13,7 @@ export const Character: FunctionalComponent<character> = (character)=> {
         <div class="caja">
             <a href={`/character/${character.id}`}>
                 <h2>{character.name}</h2>
-                <img src={character.image} alt="foto" />
+                <img class = "imagen" src={character.image} alt="foto" />
             </a>
             
         </div>

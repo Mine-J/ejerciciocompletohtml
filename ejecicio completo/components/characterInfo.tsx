@@ -26,28 +26,32 @@ export const CharacterInfo:FunctionalComponent<data> = (data)=> {
 
     return (
         <div>
-            <div class= "cabecera">
-                <h1>{data.results.name}</h1>
+            <header>
                 <a href="/"><img  class = "casa" src="/casa.png" alt="foto" /></a>
-            </div>
-            <table>
-                <tr>
-                    <td>
-                        <img src={data.results.image} alt="foto" />
-                    </td>
-                    <td>
-                        <p>Genero: {data.results.gender}</p>
-                        <p>Origen: {data.results.originName}</p>
-                        <p>Especie: {data.results.species}</p>
-                        <p>Estatus: {data.results.status}</p>
-                    </td>
-                </tr>
-            </table>
-            <ul>
-                {data.results.episode.map((elem) => (
-                    <li><a href={`/episodes/${elem.id}`}>Episodio {elem.id}: {elem.name}</a></li>
-                ))}
-            </ul>
+            </header>
+            <div class="contenido"> 
+                <h1>{data.results.name}</h1>
+                
+            
+                <table>
+                    <tr>
+                        <td>
+                            <img class = "imagen" src={data.results.image} alt="foto" />
+                        </td>
+                        <td>
+                            <p>Genero: {data.results.gender}</p>
+                            <p>Origen: {data.results.originName}</p>
+                            <p>Especie: {data.results.species}</p>
+                            <p>Estatus: {data.results.status}</p>
+                        </td>
+                    </tr>
+                </table>
+                <ul>
+                    {data.results.episode.map((elem) => (
+                        <li><a href={`/episodes/${elem.id}`}>Episodio {elem.id}: {elem.name}</a></li>
+                    ))}
+                </ul>
+            </div >
         </div>
     )
 }

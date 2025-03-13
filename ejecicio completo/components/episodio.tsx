@@ -29,18 +29,21 @@ export const Episodio:FunctionalComponent<data> = (data) => {
     
     return (
         <div>
-            <div class = "cabecera">
-                <h1>{datos.name}</h1>
-                <a href="/"><img class = "casa" src="/casa.png" alt="foto" /></a>
-            </div>
+            <header>
+                <a href="/"><img  class = "casa" src="/casa.png" alt="foto" /></a>
+            </header>
             <div>
-                <p>Fecha de salida: {datos.air_date}</p>
-                <p>Episodio: {datos.episode}</p>
-                <ul>
-                    {datos.characters.map(elem => {
-                        return (<li><a href={`/character/${elem.id}`}>Personaje: {elem.name}</a></li>)
-                    })}
-                </ul>
+                <h1>{datos.name}</h1>
+            
+                <div class = "contenido">
+                    <p>Fecha de salida: {datos.air_date}</p>
+                    <p>Episodio: {datos.episode}</p>
+                    <ul>
+                        {datos.characters.map(elem => {
+                            return (<li><a href={`/character/${elem.id}`}>Personaje: {elem.name}</a></li>)
+                        })}
+                    </ul>
+                </div>
             </div>
         </div>
     )

@@ -17,35 +17,18 @@ html {
 .caja {
   margin: 20px; /* Añadir margen para más espacio alrededor de cada caja */
   text-align: center;
+  border-style: solid;
+  border-color: transparent;
+}
+.caja:hover{
+  border-color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
 
-table {
-  display: flex;
-  width: auto;
-}
-
-tr {
-  display: flex;
-  width: 200%;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-td {
-  align-content: center;
-  text-align: center;
-  padding: 10px; /* Añadir padding para mejorar el espaciado dentro de las celdas */
-}
-
-img {
-  border-radius: 50%;
-}
-
-.cabecera {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.imagen {
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
 
 .pasarPagina {
@@ -63,7 +46,7 @@ img {
 }
 
 .casa {
-  width: 40px;
+  width: 60px;
 }
 
 a {
@@ -71,15 +54,42 @@ a {
   text-decoration: none;
 }
 
-ul {
-  column-gap: 40px;
+header {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-items: center;
+  justify-content: flex-end;
+  position: fixed;
+  width: 98%;
+  
 }
 
 li {
-  margin: 10px; /* Añadir margen para más espacio alrededor de cada elemento de lista */
+  margin: 15px; /* Añadir margen para más espacio alrededor de cada elemento de lista */
 }
+
+body{
+  background-image: url("https://img.freepik.com/foto-gratis/ruido-fondo_1194-7547.jpg?t=st=1741881652~exp=1741885252~hmac=a1cad90b40ab7c22b57168f0b541435b41d4c17e93d89029d9a3b219adec13ae&w=740");
+}
+
+.contenido{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  align-content: center;
+}
+h1{
+  text-align: center;
+}
+.contenido table {
+  margin: auto;
+  margin-bottom: 20px;
+}
+td {
+  padding: 10px;
+}
+
+.contenido ul{
+  margin: auto;
+}
+
